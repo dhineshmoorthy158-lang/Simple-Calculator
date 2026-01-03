@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            background-color: WHITE;
+            padding: 10px;
+            display: grid;
+            width: 180px;
+            grid-template-areas:'TWENTYFIVE TWENTYFIVE TWENTYFIVE TWENTYFIVE''CLEAR CLEAR MINUS PLUS''SEVEN EIGHT NINE SLASH''FOUR FIVE SIX HASHTRICT''ONE TWO THREE EQUALTO''ZERO ZERO DOT EQUALTO';
+        }
+        #main>div{
+            background-color:lightcoral;
+            padding: 10px;
+            margin: 2px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div style="grid-area: ONE;">1</div>
+        <div style="grid-area: TWO;">2</div>
+        <div style="grid-area: THREE;">3</div>
+        <div style="grid-area: FOUR;">4</div>
+        <div style="grid-area: FIVE;">5</div>
+        <div style="grid-area: SIX;">6</div>
+        <div style="grid-area: SEVEN;">7</div>
+        <div style="grid-area: EIGHT;">8</div>
+        <div style="grid-area: NINE;">9</div>
+        <div style="grid-area: ZERO;">0</div>
+        <div style="grid-area: DOT;">.</div>
+        <div style="grid-area: EQUALTO; background-color: red;">=</div>
+        <div style="grid-area: HASHTRICT;">*</div>
+        <div style="grid-area: SLASH;">/</div>
+        <div style="grid-area: PLUS;">+</div>
+        <div style="grid-area: MINUS;">-</div>
+        <div style="grid-area: CLEAR; background-color: aqua;">clear</div>
+        <div id="display" style="grid-area: TWENTYFIVE; background-color:orange;">0</div>
+
+        
+    </div>
+    <script>
+    let display = document.getElementById("display");
+    let expression = "";
+
+    document.querySelectorAll("#main > div").forEach(btn => {
+
+        btn.addEventListener("click", () => {
+            let value = btn.innerText;
+
+            if (value === "clear") {
+                expression = "";
+                display.innerText = "0";
+            }
+            else if (value === "=") {
+                try {
+                    expression = eval(expression).toString();
+                    display.innerText = expression;
+                } catch {
+                    display.innerText = "Error";
+                    expression = "";
+                }
+            }
+            else {
+                expression += value;
+                display.innerText = expression;
+            }
+        });
+
+    });
+</script>
+
+</body>
+</html>
