@@ -1,27 +1,27 @@
 🧮 Simple Calculator (HTML, CSS & JavaScript)
 
-A basic calculator web application built using HTML, CSS Grid, and Vanilla JavaScript.
+->A basic calculator web application built using HTML, CSS Grid, and Vanilla JavaScript.
 This project performs simple arithmetic operations with a clean and responsive UI.
 
 🚀 Features
 
-Perform basic operations: Addition, Subtraction, Multiplication, Division
+->Perform basic operations: Addition, Subtraction, Multiplication, Division
 
-Clear button to reset calculation
+->Clear button to reset calculation
 
-Dynamic display for real-time input
+->Dynamic display for real-time input
 
-Error handling for invalid expressions
+->Error handling for invalid expressions
 
-Built using CSS Grid Layout
+->Built using CSS Grid Layout
 
 🛠️ Technologies Used
 
-HTML5 – Structure
+->HTML5 – Structure
 
-CSS3 (Grid) – Layout & Styling
+->CSS3 (Grid) – Layout & Styling
 
-JavaScript – Calculator logic
+->JavaScript – Calculator logic
 
 📂 Project Structure
 calculator/
@@ -39,33 +39,33 @@ Open index.html in any web browser.
 
 📸 Output Preview
 
-Calculator layout with number keys (0–9)
+->Calculator layout with number keys (0–9)
 
-Arithmetic operators (+, −, ×, ÷)
+->Arithmetic operators (+, −, ×, ÷)
 
-Display panel on top
+->Display panel on top
 
-Equal (=) button to calculate result
+->Equal (=) button to calculate result
 
 🎯 Learning Outcomes
 
-Understanding CSS Grid
+->Understanding CSS Grid
 
-Handling DOM events
+->Handling DOM events
 
-Building logic using JavaScript
+->Building logic using JavaScript
 
-Using eval() safely with error handling
+->Using eval() safely with error handling
 
 📌 Future Improvements
 
-Keyboard input support
+->Keyboard input support
 
-Better UI styling
+->Better UI styling
 
-Dark mode
+->Dark mode
 
-Replace eval() with custom logic
+->Replace eval() with custom logic
 
 👤 Author
 
